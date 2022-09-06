@@ -1,0 +1,24 @@
+#cart_realise_main_box {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+#cart_realise_inputs {
+  width: 400px;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#cart_realise_prototype {
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

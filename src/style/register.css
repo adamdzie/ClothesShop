@@ -1,0 +1,113 @@
+#register_container {
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+  display: relative;
+}
+#register_box {
+  width: 400px;
+  height: fit-content;
+  /* background-color: red; */
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+#register_main {
+  width: 100%;
+  height: 100%;
+}
+#register_form {
+  display: flex;
+  flex-direction: column;
+}
+#register_desc {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.register_fill {
+  width: 100%;
+  height: 30px;
+  /* background-color: green; */
+}
+
+.register_input {
+  width: 70%;
+  height: 30px;
+  font-size: 17px;
+  margin: 10px auto;
+  text-align: center;
+}
+.register_input_2 {
+  width: 40%;
+  height: 30px;
+  font-size: 17px;
+  text-align: center;
+}
+.register_double_box {
+  width: 70%;
+  height: 35px;
+  font-size: 17px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.register_button {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: none;
+  background-color: black;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#register_link {
+  width: 100%;
+  height: fit-content;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+#register_link:hover {
+  color: rgb(81, 81, 250);
+  text-decoration: underline;
+}
+.register_button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.register_desc {
+  margin: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+#error_box {
+  color: red;
+  width: 100%;
+  height: 10px;
+  text-align: center;
+}
+hr {
+  width: 80%;
+  border-color: black;
+  filter: opacity(50%);
+}
+#register_display_error {
+  color: red;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  margin-top: 10px;
+}

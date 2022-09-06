@@ -1,0 +1,332 @@
+#header {
+  width: auto;
+  height: 80px;
+  display: flex;
+  position: relative;
+  background-color: white;
+  z-index: 15;
+}
+.bg_image {
+  /* background-image: url("../images/logo_image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0px; */
+  background-color: white;
+  margin-left: 5px;
+  min-width: 170px;
+  height: 70px;
+  float: left;
+  order: 0;
+  position: relative;
+  color: #5e4242;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.search_bar {
+  max-width: 100%;
+  height: 100%;
+  /* outline: 2px solid black; */
+  float: left;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  order: 1;
+  flex-grow: 2;
+}
+#search_form_box {
+  max-width: 100%;
+  width: 80%;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+#button_search_box {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  /* flex-grow: 1; */
+
+  /* background-color: #dedede; */
+}
+.form_styled {
+  width: 100%;
+  min-width: 100px;
+  position: relative;
+  margin: auto;
+}
+.input_style {
+  width: 100%;
+  min-width: 100px;
+  max-width: 1000px;
+  height: 2em;
+  border: 0.5px solid black;
+  outline: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+.login_box {
+  position: relative;
+  width: 20%;
+  max-width: 30%;
+  min-width: fit-content;
+  height: 100%;
+  order: 2;
+  flex-grow: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#button_header_3 {
+  background-image: url("../images/cart2.png");
+  height: 30px;
+  width: 30px;
+  /* transition: all ease 0.05s; */
+}
+#button_header_3:hover {
+  transform: scale(1.1);
+}
+.button_header {
+  cursor: pointer;
+  min-height: 25px;
+  min-width: 25px;
+  max-height: 25px;
+  max-width: 25px;
+  background-size: 100% 100%;
+}
+.icon_box {
+  display: flex;
+  width: 20%;
+  min-width: 75px;
+  height: 40px;
+  justify-content: space-between;
+  margin-right: 3px;
+}
+#account_box {
+  height: 40px;
+  display: flex;
+  float: left;
+  position: relative;
+  padding-right: 20px;
+
+  min-width: fit-content;
+}
+.filler_icon_bar {
+  width: 100%;
+  min-width: 75px;
+  height: 35px;
+  display: flex;
+  float: left;
+  position: relative;
+  flex-shrink: 0;
+  margin-top: 5px;
+  justify-content: flex-end;
+}
+.text {
+  padding-top: 2px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text a {
+  color: black;
+}
+
+.text:hover {
+  text-decoration: underline;
+}
+.text:hover ul,
+.text:hover li,
+.text:hover button {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+}
+.text1 {
+  padding-top: 2px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.arrows {
+  font-size: 16px;
+}
+#button_search {
+  background-image: url("../images/icon_search.png");
+  width: 45px;
+  height: 40px;
+  float: right;
+  border: none;
+  background-size: 80% 80%;
+  background-position-x: 4px;
+  background-position-y: 5px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  filter: opacity(70%);
+}
+#button_search:hover {
+  filter: opacity(100%);
+}
+#your_name_box {
+  min-width: fit-content;
+  min-height: fit-content;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  padding-bottom: 20px;
+  font-size: 14px;
+  /* background-color: red; */
+}
+.login_box_icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+.login_box_icon:hover img {
+  filter: invert(0%);
+}
+.login_box_icon img {
+  width: 100%;
+  height: 100%;
+  filter: invert(40%);
+}
+.login_box_img_absolute {
+  position: absolute;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 5px;
+}
+.login_box_img_absolute_no {
+  position: absolute;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #ababab;
+  border-radius: 5px;
+}
+.login_box_dropdown {
+  position: absolute;
+  width: 60px;
+  height: 70px;
+  background-color: white;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  color: black;
+  top: 64px;
+  right: 90px;
+  /* border: 1px solid black; */
+  transition: all 0.3 ease;
+}
+.login_box_icon:hover .login_box_dropdown {
+  width: 60px;
+  opacity: 1;
+}
+.login_box_dropdown:hover {
+  opacity: 1;
+  color: white;
+  background-color: #e39f9f;
+}
+.login_box_dropdown div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* @media (min-width: 1000px) {
+  .search_bar {
+    flex-grow: 2;
+  }
+  .login_box {
+    flex-grow: 0;
+  }
+} */
+@media (max-width: 850px) {
+  #header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .search_bar {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100px;
+    height: 100%;
+
+    position: relative;
+    display: flex;
+    order: 2;
+    flex-grow: 1;
+  }
+  .login_box {
+    position: relative;
+    width: 35%;
+    max-width: 100%;
+    height: 100%;
+    order: 1;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .bg_image {
+    background-repeat: no-repaet;
+    background-size: 100% 100%;
+    background-position: 0px;
+    min-width: 170px;
+    height: 80px;
+    display: flex;
+    order: 0;
+  }
+  #your_name_box {
+    text-align: right;
+    width: 80%;
+  }
+
+  #button_header_1 {
+    /* background-color: green; */
+    margin-left: 30%;
+    /* background-image: url("./images/icon_notification.png"); */
+  }
+  .filler_icon_bar {
+    margin: auto;
+  }
+  #account_box {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 480px) {
+  #header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  .search_bar {
+    margin-top: 25px;
+  }
+  .login_box {
+    margin-top: 15px;
+  }
+}

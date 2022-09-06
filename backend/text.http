@@ -1,0 +1,9 @@
+POST http://localhost:4000/api/add
+Content-Type: application/json
+
+{
+    "itemTitle":"Bluza venom",
+    "itemType": "Spodnie",
+    "itemUnderType": "Bluza z kapturem",
+    "itemPrice": 32.23
+}

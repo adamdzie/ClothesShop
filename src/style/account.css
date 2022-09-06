@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fira+Sans+Extra+Condensed&display=swap");
+h1 {
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+#account_container {
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+  /* background-color: rgb(37, 56, 70); */
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+#account_container hr {
+  width: 90%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#account_menu_choice {
+  width: 20%;
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  border-right: 1px solid black;
+}
+#account_menu_choice ul {
+  width: 220px;
+  height: 50%;
+  margin-top: 100px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-direction: column;
+  align-self: flex-start;
+  /* position: sticky;
+  top: 50px; */
+}
+#account_menu_choice li {
+  width: 70%;
+  height: 25px;
+  padding: 5px 0;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+  cursor: pointer;
+}
+#account_menu_choice li:hover {
+  width: 80%;
+
+  background-color: black;
+}
+#account_menu_choice li:hover button {
+  color: white;
+}
+.account_choice_button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+.account_slide_box {
+  position: relative;
+  /* transform: translateX(250px); */
+  width: 60%;
+  min-width: 360px;
+  height: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#account_main_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.account_edit_fields {
+  width: 90%;
+  height: 50px;
+  /* background-color: turquoise; */
+  display: flex;
+}
+.account_field1 {
+  width: 50%;
+  height: 100%;
+  margin-top: 0.5em;
+  font-size: 24px;
+  text-align: left;
+  /* background-color: black; */
+}
+.account_field2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.account_input_field {
+  width: 90%;
+  height: 60%;
+  text-align: center;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#account_button_edit {
+  width: 50%;
+  height: 50px;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#account_button_edit:hover {
+  color: black;
+  background-color: white;
+}
+#account_error_field {
+  width: 100%;
+  height: 50px;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+@media (max-width: 900px) {
+  #account_container {
+    width: 100%;
+    height: 100%;
+
+    /* background-color: rgb(37, 56, 70); */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #account_menu_choice {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  #account_menu_choice ul {
+    width: 100%;
+    height: 100%;
+    min-height: fit-content;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: row;
+    align-self: none;
+    position: sticky;
+    top: 0px;
+    margin: 0;
+  }
+  #account_menu_choice li {
+    height: 100%;
+  }
+}
